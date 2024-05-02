@@ -1,8 +1,38 @@
 {
   "name": "persian-number-converter",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "private": false,
+  "description": "Custom React hook for formatting numbers into Persian Numbers",
+  "version": "1.0.2",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "license": "MIT",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "/dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alirezawmoradi/Persian-Number-Converter"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "react",
+    "convert",
+    "number",
+    "persian",
+    "react hooks",
+    "typescript",
+    "npm"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,8 +40,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/node": "^20.12.8",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite-plugin-dts": "^3.9.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
