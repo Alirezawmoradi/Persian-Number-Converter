@@ -2,8 +2,6 @@
 
 A custom hook for converting numbers into their Persian format.
 
----
-
 ## Overview
 
 The `usePersianNumber` hook is designed to simplify the process of formatting numeric values into Persian (Farsi) numbers.
