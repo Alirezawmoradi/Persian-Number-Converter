@@ -1,11 +1,9 @@
-import {useEffect, useState} from "react";
+import {useMemo} from "react";
 
 export const usePersianNumber = (number: number) => {
-    const [PersianNumber, setPersianNumber] = useState<string>('');
 
-    useEffect(() => {
-        const convertedNumber = new Intl.NumberFormat('fa-IR', {style: "decimal"}).format(number).replace(/٬/g, "");
-        setPersianNumber(convertedNumber)
+    const PersianNumber = useMemo(() => {
+        return new Intl.NumberFormat('fa-IR', {style: "decimal"}).format(number).replace(/٬/g, "");
     }, [number]);
 
     return PersianNumber;
