@@ -2,7 +2,7 @@
   "name": "persian-number-converter",
   "private": false,
   "description": "Custom React hook for formatting numbers into Persian Numbers",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "license": "MIT",
@@ -29,7 +29,7 @@
     "convert",
     "number",
     "persian",
-    "react hooks",
+    "utils",
     "typescript",
     "npm"
   ],

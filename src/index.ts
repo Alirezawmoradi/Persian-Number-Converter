@@ -1,1 +1,1 @@
-export {usePersianNumber} from './hooks/usePersianNumber.tsx'
+export {PersianNumber} from './utils/persianNumber.tsx'
