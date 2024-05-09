@@ -26,7 +26,7 @@ import { PersianNumber } from "persian-number-converter";
 ```
 ```jsx
 const Example = 123;
-PersianNumber(Number1);
+PersianNumber(Example);
 ```
 ## Contributing
 
